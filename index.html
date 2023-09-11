@@ -326,7 +326,7 @@ section {
                  </div>
                </div>
            </div>
-           <a href="" class="custom-button">
+           <a href="" class="custom-button" id="disableClick">
             <div class="text-center mb-4 pb-2">
                 <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-quotes/bulb.webp"
                     alt="Bulb" width="100">
@@ -341,14 +341,14 @@ section {
                 </blockquote>
             </figure>
         </a>
-                    <a href="" class="custom-button">
-        <h1>Company Background</h1>
-        <br><span class="lead font-italic">Zian Recruitment and Consultancy Agency Limited, founded on July 7th, 2023, by Pondi Collins and Zian Shito, specializes in recruitment and consultation services. Our core mission is to provide real-time assistance in securing employment opportunities.
-
-       <br><br> Committed to combatting unemployment, we facilitate access to diverse job services and openings, thereby stimulating economic growth and reducing joblessness rates. 
-
-        <br><br>Our dedication extends to empowering individuals, regardless of age or gender, not only by offering job opportunities but also by equipping them with valuable self-employment skills.</span>
-    </a>
+        <a href="#" class="custom-button" id="disableClick" onclick="return false;">
+            <h1>Company Background</h1>
+            <br><span class="lead font-italic">Zian Recruitment and Consultancy Agency Limited, founded on July 7th, 2023, by Pondi Collins and Zian Shito, specializes in recruitment and consultation services. Our core mission is to provide real-time assistance in securing employment opportunities.
+        
+            <br><br> Committed to combatting unemployment, we facilitate access to diverse job services and openings, thereby stimulating economic growth and reducing joblessness rates. 
+        
+            <br><br>Our dedication extends to empowering individuals, regardless of age or gender, not only by offering job opportunities but also by equipping them with valuable self-employment skills.</span>
+        </a>
                       <br><br><br>
                       
                       
@@ -374,12 +374,13 @@ section {
           <div class="about-col-">
             <p<p class="justified-text">
                       </p>
-                      <a href="" class="custom-button">
+                      <a href="#" class="custom-button" onclick="return false;">
                         <h1>Overview</h1>
-                        <br><span class="lead font-italic">Zian Recruitment and Consultancy Agency Limited is a Human Resource recruitment agency, a human resource man power, a career consultation and a profession/ expatriate service company that aims at improving life standards through securing, advertising, providing, arranging and assisting our clients get better jobs and professionals/experts both locally in Kenya and abroad.
-
-                          <br><br>Zian Recruitment and Consultancy Agency Limited has the potential to create employment both in permanent and contractual terms.</span>
+                        <br><span class="lead font-italic">Zian Recruitment and Consultancy Agency Limited is a Human Resource recruitment agency, a human resource man power, a career consultation and a profession/expatriate service company that aims at improving life standards through securing, advertising, providing, arranging and assisting our clients get better jobs and professionals/experts both locally in Kenya and abroad.
+                    
+                        <br><br>Zian Recruitment and Consultancy Agency Limited has the potential to create employment both in permanent and contractual terms.</span>
                     </a>
+                    
 
           </div>
         </div>
@@ -391,38 +392,38 @@ section {
         <div class="row">
           <div class="service-col-1">
             <img src="electrician 2.avif" alt="" style="width: 370px; height: 250px;">
-          </div>
           <div class="service-col-2">
-            <h1 class="sub-title" style="margin-bottom: 1px;">Some of the abroad jobs we offer</h1>
-            
-                <div id="services">
-                    <div class="container">
-                        <div class="row">
-                            <div class="service-col">
-                                <ul class="service-list">
-                                    <li>Mechanical Engineering</li>
-                                    <li>Security Guards</li>
-                                    <li>Cashiers & Salesmen</li>
-                                    <li>Hospitality</li>
-                                    <li>Cleaners</li>
-                                    <li>Managers</li>
-                                    <li>Agricultural Industries (Farm Worker)</li>
-                                </ul>
-                            </div>
-                            <div class="service-col">
-                                <ul class="service-list">
-                                    <li>Accountants</li>
-                                    <li>Drivers</li>
-                                    <li>Fuel Pump Attendants</li>
-                                    <li>Airport Attendants</li>
-                                    <li>Teaching Opportunities</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- End Services Section -->
-            </p>
+    <br><h1 class="sub-title" style="margin-bottom: 1px;">Some of the abroad jobs we offer</h1>
+
+    <div id="services">
+        <div class="container">
+            <div class="row">
+                <div class="service-col">
+                    <ul class="service-list" style="margin-top: -5px; padding-top: 5px;">
+                        <li>Mechanical Engineering</li>
+                        <li>Security Guards</li>
+                        <li>Cashiers & Salesmen</li>
+                        <li>Hospitality</li>
+                        <li>Cleaners</li>
+                        <li>Managers</li>
+                        <li>Agricultural Industries (Farm Worker)</li>
+                    </ul>
+                </div>
+                <div class="service-col">
+                    <ul class="service-list" style="margin-top: -5px; padding-top: 5px;">
+                        <li>Accountants</li>
+                        <li>Drivers</li>
+                        <li>Fuel Pump Attendants</li>
+                        <li>Airport Attendants</li>
+                        <li>Teaching Opportunities</li>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </div><!-- End Services Section -->
+</div>
+
+        
         
         </div>
       </div>
@@ -492,6 +493,16 @@ section {
 
 
     <!-- More sections or content here -->
+    <script>
+        document.getElementById("disableClick").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the default behavior of the anchor
+        });
+    </script>
+    <script>
+        document.getElementById("disableClick").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the default behavior of the anchor
+        });
+    </script>
 
     <script>
         const body = document.querySelector("body"),
